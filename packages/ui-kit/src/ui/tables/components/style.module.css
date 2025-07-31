@@ -1,0 +1,33 @@
+.option-row {
+  display: flex;
+  cursor: pointer;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--ant-column-chooser-option-padding-vertical) var(--ant-column-chooser-option-padding-horizontal);
+}
+
+.option-row:hover {
+  background: var(--ant-column-chooser-option-hover-bg);
+}
+
+.option-title {
+  margin-right: var(--ant-margin-xl);
+  font-size: var(--ant-column-chooser-option-font-size);
+  color: var(--ant-column-chooser-option-color);
+}
+
+.option-checked {
+  font-weight: var(--ant-font-weight-strong);
+}
+
+.option-icon-size {
+  width: var(--ant-column-chooser-option-icon-width);
+  height: var(--ant-column-chooser-option-icon-height);
+}
+
+.option-content {
+  :global(.ant-popover-inner) {
+    padding: var(--ant-column-chooser-padding-vertical) var(--ant-column-chooser-padding-horizontal);
+  }
+}

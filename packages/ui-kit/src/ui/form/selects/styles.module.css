@@ -1,0 +1,99 @@
+.select-position {
+  position: absolute;
+  top: 0;
+  z-index: 99;
+}
+
+.select-scroll-sm :global(.ant-select-selector) {
+  overflow-y: auto;
+  max-height: var(--ant-input-max-height-sm);
+}
+
+.select-scroll :global(.ant-select-selector) {
+  overflow: hidden auto;
+  max-height: var(--ant-input-max-height);
+}
+
+.select-scroll-lg :global(.ant-select-selector) {
+  overflow: hidden auto;
+  max-height: var(--ant-input-max-height-lg);
+}
+
+.select-scroll :global(.ant-select-selection-search input) {
+  height: auto !important;
+}
+
+.readonly {
+  pointer-events: none;
+
+  &:global(.ant-select-outlined:not(.ant-select-customize-input) .ant-select-selector) {
+    border-color: transparent;
+    box-shadow: none;
+  }
+}
+
+.select-new-value-border {
+  border-top: 1px solid var(--ant-color-border);
+  margin: 3px -4px;
+}
+
+.select-new-value-content {
+  margin: 4px 4px 0;
+  padding: 5px 12px;
+}
+
+.select-new-value {
+  cursor: pointer;
+}
+
+.select-new-value:hover {
+  background-color: var(--ant-select-option-active-bg);
+}
+
+:global(.remove-multiselect-margin) {
+  margin-inline-end: 0 !important;
+}
+
+:global(:where(.select) .ant-select-selection-item) {
+  max-width: var(--ant-multiple-item-max-width) !important;
+}
+
+.icon-options {
+  :global(.ant-select-selection-item) {
+    svg {
+      width: var(--ant-font-size-icon);
+      height: var(--ant-font-size-icon);
+      align-items: center;
+      display: flex;
+      color: var(--ant-select-icon-color);
+    }
+  }
+}
+
+/** Переопределяем принудительно стили для встроенного селекта */
+.compact-after {
+  :global(.ant-select-outlined:not(.ant-select-customize-input) .ant-select-selector) {
+    border-radius: 0 6px 6px 0;
+    background: rgb(0 0 0 / 2%);
+    box-shadow: none !important;
+    border: var(--ant-line-width) var(--ant-line-type) var(--ant-color-border) !important;
+  }
+}
+
+.popup-item {
+  :global(.ant-select-item-option-selected .ant-select-item-option-content) {
+    svg {
+      width: var(--ant-select-menu-icon-size);
+      height: var(--ant-select-menu-icon-size);
+      color: var(--ant-select-menu-icon-active-color) !important;
+    }
+  }
+
+  :global(.ant-select-item-option-content) {
+    svg {
+      width: var(--ant-select-menu-icon-size);
+      height: var(--ant-select-menu-icon-size);
+      color: var(--ant-select-menu-icon-color);
+    }
+  }
+}

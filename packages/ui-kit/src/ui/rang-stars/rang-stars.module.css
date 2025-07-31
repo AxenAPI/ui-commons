@@ -1,0 +1,25 @@
+.root {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.star {
+  color: #e0e0e0;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.star.active {
+  color: #fff;
+}
+
+.star.active svg {
+  fill: #f5a374;
+  color: #f5a374;
+}
+
+.star.readOnly {
+  cursor: default;
+  opacity: 0.7;
+}

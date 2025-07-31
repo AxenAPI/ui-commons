@@ -1,0 +1,15 @@
+const IconFence24 = () => {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none">
+      <path
+        stroke="#595959"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="1.5"
+        d="M6 16v4h4v-4m0-4V6L8 4 6 6v6m8 4v4h4v-4m0-4V6l-2-2-2 2v6M4 12v4h16v-4z"
+      />
+    </svg>
+  );
+};
+
+export default IconFence24;

@@ -1,0 +1,144 @@
+.custom-badge.default {
+  background-color: var(--ant-default-indicator-bg);
+  color: var(--ant-default-text-color);
+}
+
+:global(.ant-btn:hover) {
+  .custom-badge.default {
+    background-color: var(--ant-default-indicator-hover-bg);
+    color: var(--ant-default-text-hover-color);
+  }
+}
+
+:global(.ant-btn:active) {
+  .custom-badge.default {
+    background-color: var(--ant-default-indicator-pressed-bg);
+    color: var(--ant-default-text-hover-color);
+  }
+}
+
+:global(.ant-btn:disabled),
+:global(.ant-btn.ant-btn-disabled) {
+  .custom-badge.default {
+    background-color: var(--ant-default-indicator-bg);
+    color: var(--ant-default-text-disabled-color);
+    border: 1px solid var(--ant-default-indicator-bg);
+    box-shadow: none;
+  }
+}
+
+.custom-badge.primary {
+  background-color: var(--ant-primary-indicator-bg);
+  color: var(--ant-primary-text-color);
+}
+
+:global(.ant-btn:hover) {
+  .custom-badge.primary {
+    background-color: var(--ant-primary-indicator-bg);
+    color: var(--ant-primary-text-color-hover);
+  }
+}
+
+:global(.ant-btn:active) {
+  .custom-badge.primary {
+    background-color: var(--ant-primary-indicator-bg);
+    color: var(--ant-primary-text-color-pressed);
+  }
+}
+
+:global(.ant-btn:disabled),
+:global(.ant-btn.ant-btn-disabled) {
+  .custom-badge.primary {
+    background-color: var(--ant-default-indicator-bg);
+    color: var(--ant-default-text-disabled-color);
+    border: 1px solid var(--ant-default-indicator-bg);
+    box-shadow: none;
+  }
+}
+
+.custom-badge.danger {
+  background-color: var(--ant-primary-indicator-bg);
+  color: var(--ant-color-error);
+}
+
+:global(.ant-btn:hover) {
+  .custom-badge.danger {
+    background-color: var(--ant-primary-indicator-bg);
+    color: var(--ant-color-error-hover);
+  }
+}
+
+:global(.ant-btn:active) {
+  .custom-badge.danger {
+    background-color: var(--ant-primary-indicator-bg);
+    color: var(--ant-color-error-pressed);
+  }
+}
+
+:global(.ant-btn:disabled),
+:global(.ant-btn.ant-btn-disabled) {
+  .custom-badge.danger {
+    background-color: var(--ant-default-indicator-bg);
+    color: var(--ant-default-text-disabled-color);
+    border: 1px solid var(--ant-default-indicator-bg);
+    box-shadow: none;
+  }
+}
+
+.custom-badge.text {
+  background-color: var(--ant-default-indicator-bg);
+  color: var(--ant-default-text-color);
+}
+
+:global(.ant-btn:hover) {
+  .custom-badge.text {
+    background-color: var(--ant-default-indicator-bg);
+    color: var(--ant-default-text-color);
+  }
+}
+
+:global(.ant-btn:active) {
+  .custom-badge.text {
+    background-color: var(--ant-default-indicator-bg);
+    color: var(--ant-default-text-color);
+  }
+}
+
+:global(.ant-btn:disabled),
+:global(.ant-btn.ant-btn-disabled) {
+  .custom-badge.text {
+    background-color: var(--ant-default-indicator-bg);
+    color: var(--ant-color-text-light-solid);
+    border: 1px solid var(--ant-default-indicator-bg);
+    box-shadow: none;
+  }
+}
+
+.custom-badge.link {
+  background-color: var(--ant-color-primary);
+  color: var(--ant-color-text-light-solid);
+}
+
+:global(.ant-btn:hover) {
+  .custom-badge.link {
+    background-color: var(--ant-default-indicator-hover-bg);
+    color: var(--ant-color-text-light-solid);
+  }
+}
+
+:global(.ant-btn:active) {
+  .custom-badge.link {
+    background-color: var(--ant-default-indicator-pressed-bg);
+    color: var(--ant-color-text-light-solid);
+  }
+}
+
+:global(.ant-btn:disabled),
+:global(.ant-btn.ant-btn-disabled) {
+  .custom-badge.link {
+    background-color: var(--ant-default-indicator-bg);
+    color: var(--ant-color-text-light-solid);
+    border: 1px solid var(--ant-default-indicator-bg);
+    box-shadow: none;
+  }
+}

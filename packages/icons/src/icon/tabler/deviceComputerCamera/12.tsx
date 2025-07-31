@@ -1,0 +1,14 @@
+const IconDeviceComputerCamera12 = () => {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="none">
+      <path
+        stroke="#595959"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        d="M4 8 2.955 9.743a.5.5 0 0 0 .428.757h5.234a.5.5 0 0 0 .428-.757L8 8M2.5 5a3.5 3.5 0 1 0 7 0 3.5 3.5 0 0 0-7 0m2 0a1.5 1.5 0 1 0 3 0 1.5 1.5 0 0 0-3 0"
+      />
+    </svg>
+  );
+};
+
+export default IconDeviceComputerCamera12;

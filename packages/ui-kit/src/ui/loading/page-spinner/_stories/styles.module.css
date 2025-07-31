@@ -1,0 +1,10 @@
+.wrapper {
+  width: 600px;
+  height: 400px;
+  overflow: hidden;
+
+  :global(.ant-spin-fullscreen) {
+    width: 100%;
+    height: 100%;
+  }
+}

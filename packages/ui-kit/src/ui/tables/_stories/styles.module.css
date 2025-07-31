@@ -1,0 +1,12 @@
+.wrapper {
+  border: 1px solid lightgrey;
+  padding: 30px;
+  border-radius: 10px;
+  width: 900px;
+  margin: 0 auto;
+}
+
+.active {
+  border-color: rgb(255 148 77);
+  color: rgb(255 148 77);
+}

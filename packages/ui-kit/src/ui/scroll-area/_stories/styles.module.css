@@ -1,0 +1,27 @@
+ul {
+  margin: 0;
+  padding: 16px;
+  list-style-type: none;
+}
+
+li {
+  border-bottom: 1px solid rgb(0 0 0 / 10%);
+}
+
+.verticalContainer {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  height: 300px;
+  width: 200px;
+  border-radius: 8px;
+  border: 1px solid rgb(0 0 0 / 10%);
+}
+
+.horizontalContainer {
+  white-space: nowrap;
+  border-radius: 8px;
+  border: 1px solid rgb(0 0 0 / 10%);
+  padding: 16px;
+  width: 300px;
+}

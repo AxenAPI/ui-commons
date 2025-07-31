@@ -1,0 +1,7 @@
+:global(.ant-tree-treenode) {
+  span {
+    align-self: center !important;
+    margin-top: 0 !important;
+    vertical-align: sub !important;
+  }
+}

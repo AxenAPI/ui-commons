@@ -1,0 +1,7 @@
+.pagination :global .ant-select {
+  min-width: 65px !important;
+
+  :global(.ant-select-selector) {
+    padding-right: calc(var(--ant-padding-sm) + var(--ant-select-menu-icon-size) / 2);
+  }
+}

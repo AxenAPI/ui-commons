@@ -1,0 +1,22 @@
+{
+  "Empty": {
+    "description": "No data"
+  },
+  "Icon": {
+    "icon": "icon"
+  },
+  "Image": {
+    "preview": "Preview"
+  },
+  "QRCode": {
+    "expired": "QR code expired",
+    "refresh": "Refresh",
+    "scanned": "Scanned"
+  },
+  "ColorPicker": {
+    "presetEmpty": "Empty",
+    "transparent": "Transparent",
+    "singleColor": "Single",
+    "gradientColor": "Gradient"
+  }
+}

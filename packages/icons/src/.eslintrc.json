@@ -1,0 +1,10 @@
+{
+  "env": {
+    "browser": true,
+    "node": false
+  },
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+  "extends": ["plugin:storybook/recommended", "plugin:@axenix/react-recommended"]
+}

@@ -1,0 +1,36 @@
+.file-list-dragger {
+  :global(.ant-upload-list-text .ant-upload-list-item-error) {
+    background-color: var(--ant-control-item-bg-error);
+  }
+
+  :global(.ant-upload-list-text .ant-upload-list-item-error):hover {
+    background-color: var(--ant-control-item-bg-error);
+  }
+}
+
+.icon-document {
+  display: inline-flex;
+  margin: 0 0 var(--ant-margin);
+}
+
+.title-document {
+  margin: 0 0 var(--ant-margin-xxs);
+  color: var(--ant-color-text-heading);
+  font-size: var(--ant-font-size-lg);
+  line-height: var(--ant-line-height-lg);
+}
+
+.file-input-disabled .title-document{
+  color: var(--ant-color-text-disabled);
+}
+
+.description-document {
+  color: var(--ant-color-text-description);
+  font-size: var(--ant-font-size);
+  line-height: var(--ant-line-height);
+}
+
+.file-input-disabled svg{
+  color: var(--ant-color-primary-disable);
+  fill: var(--ant-color-primary-disable);
+}

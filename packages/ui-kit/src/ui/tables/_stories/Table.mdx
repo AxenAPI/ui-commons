@@ -1,0 +1,201 @@
+import { Controls, Meta, Primary, Story, Title } from '@storybook/blocks';
+
+import * as TableStories from './Table.stories';
+
+<Meta of={TableStories} />
+
+<Title />
+
+<Primary />
+
+Компонент принимает следующие параметры (props):
+
+<Controls />
+
+# Default
+
+<Story of={TableStories.DefaultTable} />
+
+# Selection
+
+Столбцы можно сделать выбираемыми, используя rowSelection.type для установки типа выбора. По умолчанию установлен checkbox.
+
+<Story of={TableStories.SelectionTable} />
+
+Можно назначить checkbox на любую колонку с помощью установки флага `SELECTION_COLUMN` в колонках
+
+<Story of={TableStories.SelectionTableWithFlag} />
+
+# Selection and operations
+
+Чтобы выполнить операции и очистить выбранные строки, используйте rowSelection.selectedRowKeys.
+
+<Story of={TableStories.SelectionOperationTable} />
+
+# Filter and sorter
+
+Используйте filters для создания меню фильтров в столбцах, onFilter для определения отфильтрованного результата и filterMultiple, чтобы указать, является ли это множественным или одиночным выбором, filterOnClose, чтобы указать, следует ли активировать фильтр при закрытии меню фильтров.
+
+Используйте defaultFilteredValue, чтобы фильтровать столбец по умолчанию.
+
+Используйте sorter, чтобы сделать столбец сортируемым. sorter может быть функцией сортировщика типа: function(rowA, rowB) \{ ... }.
+
+sortDirections: ['ascend', 'descend'] определяет доступные методы сортировки для каждого столбца, действующие для всех столбцов, если они установлены в пропсах таблицы. Вы можете установить ['ascend', 'descend', 'ascend'], чтобы предотвратить возврат сортировщика в состояние по умолчанию.
+
+Используйте defaultSortOrder, чтобы отсортировать столбец по умолчанию.
+
+Если sortOrder или defaultSortOrder указаны со значением возрастания или убывания, вы можете получить доступ к этому значению из функции, переданной сортировщику, как описано выше. Такая функция может иметь вид: function(a, b, sortOrder) \{ ... }.
+
+<Story of={TableStories.FilterSorterTable} />
+
+# Filter in tree
+
+Вы можете использовать filterMode для изменения интерфейса фильтра по умолчанию, параметров: menu (по умолчанию) и tree.
+
+<Story of={TableStories.FilterInTreeTable} />
+
+# Filter with search
+
+filterSearch используется для включения поиска элементов фильтра, и вы можете установить собственный метод фильтра с помощью filterSearch:(input, Record) => boolean.
+
+<Story of={TableStories.FilterSearchTable} />
+
+# Multiple sorter
+
+Column.sorter поддерживает пропс multiple для настройки приоритета столбцов сортировки. Хотя sorter.compare позволяет настроить функцию сравнения.
+
+<Story of={TableStories.MultipleSorterTable} />
+
+# Reset filters
+
+Управляйте фильтрами и сортировщиками с помощью filteredValue и sortOrder.
+
+1. Определение filteredValue или sortOrder означает, что он находится в контролируемом режиме.
+2. Убедитесь, что sortOrder назначен только для одного столбца.
+3. Column.key является обязательным полем.
+   <Story of={TableStories.ResetFiltersTable} />
+
+# Customized filter panel
+
+Реализация кастомного поиска по столбцам с помощью filterDropdown.
+
+<Story of={TableStories.CustomFilterPanelTable} />
+
+# Всплывающие кнопки действий над строками таблицы
+
+Для использования необходимо:
+
+1. Добавить параметр `isNeedToShowSettingsCell`
+2. Добавить свойство с описанием кнопок действий `renderAction` `((record: RecordType) => ReactNode)`
+
+<Story of={TableStories.EditableCellTable} />
+
+# Sizes
+
+Есть два размера компактных столов: middle и small. small используется только в модальных окнах.
+
+<Story of={TableStories.SizedTable} />
+
+# Border, title, footer
+
+Добавление border, header и footer в таблицу.
+
+<Story of={TableStories.BorderTitleFooterTable} />
+
+# Expandable
+
+Для отображения информации, занимающей слишком много места используйте expandable
+
+<Story of={TableStories.ExpandableTable} />
+
+# Span
+
+Заголовок столбца таблицы поддерживает colSpan, установленный в column.
+
+Ячейка таблицы поддерживает colSpan и rowSpan, которые установлены в возвращаемом объекте onCell. Если для каждого из них установлено значение 0, ячейка не будет отображаться.
+
+<Story of={TableStories.SpanTable} />
+
+# Tree data
+
+Отображать данные древовидной структуры в таблице, когда в data есть дочерние элементы ключа поля. Попробуйте настроить свойство ChildrenColumnName, чтобы избежать древовидной структуры таблицы.
+
+<Story of={TableStories.TreeDataTable} />
+
+# Fixed header
+
+Фиксирование header при добавлении скролла таблицы
+
+<Story of={TableStories.FixedHeaderTable} />
+
+# Fixed columns
+
+Фиксирование columns при большом количестве колонок
+
+<Story of={TableStories.FixedColumnsTable} />
+
+# Fixed header and columns
+
+<Story of={TableStories.FixedColumnsAndHeaderTable} />
+
+# Hidden columns
+
+Скрывание колонок с помощью пропса hidden
+
+<Story of={TableStories.HiddenColumnsTable} />
+
+# Grouped columns
+
+Группировка колонок с помощью columns[n].children.
+
+<Story of={TableStories.GroupedColumnsTable} />
+
+# Nested tables
+
+Добавление вложенных таблиц
+
+<Story of={TableStories.NestedTables} />
+
+# Elipsis
+
+Добавление ячейки с многоточием с помощью columns.ellipsis.
+
+<Story of={TableStories.EllipsisColumnTable} />
+
+# Elipsis with tooltip
+
+Содержимое ячейки с многоточием через настройку columns.ellipsis.showTitle.
+
+<Story of={TableStories.EllipsisWithTooltipTable} />
+
+# Responsive
+
+Адаптивные столбцы.
+
+<Story of={TableStories.ResponsiveColumnsTable} />
+
+# Редактирование в строке. Таблица с большим количеством данных
+
+Используйте props components чтобы сделать ячейку таблицы с возможностью редактирования.
+
+Если вы используйте выбор колонок в таблице через rowSelection и таблица имеет большой объем данных.
+Используйте обязательно shouldCellUpdate в конфиге columns. Данный параметр нужно прокинуть в каждую колонку таблицы.
+Например: shouldCellUpdate: (record: DataType, prevRecord: DataType) => !isEqual(record, prevRecord).
+
+Не забудь! Если вы используете props renderAction или isNeedToShowSettingsCell прокиньте в columnActionSettings параметр shouldCellUpdate.
+
+<Story of={TableStories.EditableCellTable} />
+
+# Добавление действий по строке
+
+Добавление собственных действий по строке с помощью renderAction. Имеется возможность сделать действия активными
+
+Не забудь! Если вы используете props renderAction или isNeedToShowSettingsCell прокиньте в columnActionSettings параметр shouldCellUpdate.
+
+<Story of={TableStories.WithActions} />
+
+# Скрытие горизонтального скролла
+
+isScrollHidden скрывает горизонтыльный кролл
+
+<Story of={TableStories.HiddenScrollTable} />

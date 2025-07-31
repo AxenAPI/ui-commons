@@ -1,0 +1,21 @@
+{
+  "title": "Тема для Axenix UI",
+  "description": "Тема для использования с библиотекой компонентов Axenix UI",
+  "type": "object",
+  "properties": {
+    "id": {
+      "description": "Идентификатор темы",
+      "type": "string"
+    },
+    "algorithm": {
+      "description": "Алгоритм темы (light или dark)",
+      "type": "string",
+      "pattern": "^(light|dark)$"
+    },
+    "token": {
+      "description": "Значения Figma Design Tokens",
+      "type": "object"
+    }
+  },
+  "required": ["id", "token"]
+}

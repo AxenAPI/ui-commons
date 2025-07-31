@@ -1,0 +1,15 @@
+const IconBallpen24 = () => {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none">
+      <path
+        stroke="#595959"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="1.5"
+        d="m14 6 7 7-4 4M4 20l1.768-1.768m.06-.06a2.827 2.827 0 0 0 4 0L20.414 7.586a2 2 0 0 0 0-2.829l-1.171-1.17a2 2 0 0 0-2.829 0L5.828 14.171a2.83 2.83 0 0 0 0 4"
+      />
+    </svg>
+  );
+};
+
+export default IconBallpen24;

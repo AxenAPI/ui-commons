@@ -1,0 +1,13 @@
+{
+  "env": {
+    "browser": false,
+    "node": true
+  },
+  "parserOptions": {
+    "project": "./tsconfig.node.json"
+  },
+  "extends": ["plugin:@axenix/typescript-recommended", "plugin:@axenix/react-recommended"],
+  "rules": {
+    "no-console": "warn"
+  }
+}

@@ -1,0 +1,68 @@
+.message {
+  display: flex;
+  align-items: center;
+  width: max-content;
+  max-width: 100%;
+  gap: 8px;
+  padding: var(--message-paddingSM) var(--message-paddingContentVertical);
+  border-radius: var(--message-borderRadiusLG);
+  font-size: var(--fontSize);
+  line-height: var(--message-line-height);
+  font-family: var(--message-font-family);
+  color: var(--colorText);
+  background: var(--message-contentBg);
+  box-shadow: var(--message-boxShadow);
+  opacity: 1;
+}
+
+.iconWrap {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+}
+
+.iconNormal {
+  color: var(--message-colorInfo);
+}
+.iconSuccess {
+  color: var(--message-colorSuccess);
+}
+.iconError {
+  color: var(--message-colorError);
+}
+.iconWarning {
+  color: var(--message-colorWarning);
+}
+.iconLoading {
+  color: var(--message-colorInfo);
+}
+
+.loaderSpin {
+  animation: message-spin 1s linear infinite;
+}
+
+@keyframes message-spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.normal {
+  border: 1px solid var(--message-colorNormal);
+}
+
+.success {
+  border: 1px solid var(--message-colorSuccess);
+}
+
+.error {
+  border: 1px solid var(--message-colorError);
+}
+
+.warning {
+  border: 1px solid var(--message-colorWarning);
+}
+
+.loading {
+  border: 1px solid var(--message-colorInfo);
+} 

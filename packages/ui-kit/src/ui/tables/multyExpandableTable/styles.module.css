@@ -1,0 +1,26 @@
+.expand {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+.groupText {
+  display: block;
+  padding: 8px 4px;
+  width: 100%;
+  font-weight: var(--ant-font-weight-strong);
+  color: var(--ant-color-text);
+}
+
+.pagination > div {
+  justify-content: flex-end;
+}
+
+.table {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  gap: 12px;
+}

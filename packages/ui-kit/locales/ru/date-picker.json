@@ -1,0 +1,46 @@
+{
+  "placeholder": "Выберите дату",
+  "yearPlaceholder": "Выберите год",
+  "quarterPlaceholder": "Выберите квартал",
+  "monthPlaceholder": "Выберите месяц",
+  "weekPlaceholder": "Выберите неделю",
+  "rangePlaceholder": {
+    "start": "Начальная дата",
+    "end": "Конечная дата"
+  },
+  "rangeYearPlaceholder": {
+    "start": "Начальный год",
+    "end": "Год окончания"
+  },
+  "rangeMonthPlaceholder": {
+    "start": "Начальный месяц",
+    "end": "Конечный месяц"
+  },
+  "rangeWeekPlaceholder": {
+    "start": "Начальная неделя",
+    "end": "Конечная неделя"
+  },
+  "shortWeekDays": {
+    "Sunday": "Вс",
+    "Monday": "Пн",
+    "Tuesday": "Вт",
+    "Wednesday": "Ср",
+    "Thursday": "Чт",
+    "Friday": "Пт",
+    "Saturday": "Сб"
+  },
+  "shortMonths": {
+    "January": "Январь",
+    "February": "Февраль",
+    "March": "Март",
+    "April": "Апрель",
+    "May": "Май",
+    "June": "Июнь",
+    "July": "Июль",
+    "August": "Август",
+    "September": "Сентябрь",
+    "October": "Октябрь",
+    "November": "Ноябрь",
+    "December": "Декабрь"
+  }
+}

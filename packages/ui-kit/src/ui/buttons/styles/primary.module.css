@@ -1,0 +1,174 @@
+:global(.ant-btn.ant-btn-solid) {
+  background: var(--ant-primary-bg);
+  border-color: var(--ant-primary-border-color);
+  color: var(--ant-button-primary-color);
+}
+
+:global(.ant-btn.ant-btn-solid) svg {
+  color: var(--ant-icon-primary-color);
+}
+
+:global(.ant-btn.ant-btn-solid:not(:disabled, .ant-btn-disabled)):hover {
+  background: var(--ant-primary-hover-bg);
+  border-color: var(--ant-primary-hover-border-color);
+  color: var(--ant-primary-hover-color);
+}
+
+:global(.ant-btn.ant-btn-solid:not(:disabled, .ant-btn-disabled)):hover svg {
+  color: var(--ant-icon-primary-hover-color);
+}
+
+:global(.ant-btn.ant-btn-solid:not(:disabled, .ant-btn-disabled)):active {
+  background: var(--ant-primary-pressed-bg);
+  border-color: var(--ant-primary-pressed-border-color);
+  color: var(--ant-primary-pressed-color);
+}
+
+:global(.ant-btn.ant-btn-solid:not(:disabled, .ant-btn-disabled)):active svg {
+  color: var(--ant-icon-primary-pressed-color);
+}
+
+:global(.ant-btn.ant-btn-solid):disabled,
+:global(.ant-btn.ant-btn-solid.ant-btn-disabled) {
+  background: var(--ant-primary-disabled-bg);
+  border-color: var(--ant-primary-disabled-border-color);
+  color: var(--ant-primary-disabled-color);
+}
+
+:global(.ant-btn.ant-btn-solid):disabled svg,
+:global(.ant-btn.ant-btn-solid.ant-btn-disabled) svg {
+  color: var(--ant-icon-primary-disabled-color);
+}
+
+/* dangerous */
+
+:global(.ant-btn.ant-btn-solid.ant-btn-dangerous) {
+  background: var(--ant-primary-danger-bg);
+  border-color: var(--ant-primary-danger-border-color);
+  color: var(--ant-primary-danger-color);
+}
+
+:global(.ant-btn.ant-btn-solid.ant-btn-dangerous) svg {
+  color: var(--ant-icon-primary-danger-color);
+}
+
+:global(.ant-btn.ant-btn-solid.ant-btn-dangerous:not(:disabled, .ant-btn-disabled)):hover {
+  background: var(--ant-primary-danger-hover-bg);
+  border-color: var(--ant-primary-danger-hover-border-color);
+  color: var(--ant-primary-danger-hover-color);
+}
+
+:global(.ant-btn.ant-btn-solid.ant-btn-dangerous:not(:disabled, .ant-btn-disabled)):hover svg {
+  color: var(--ant-icon-primary-danger-hover-color);
+}
+
+:global(.ant-btn.ant-btn-solid.ant-btn-dangerous:not(:disabled, .ant-btn-disabled)):active {
+  background: var(--ant-primary-danger-pressed-bg);
+  border-color: var(--ant-primary-danger-pressed-border-color);
+  color: var(--ant-primary-danger-pressed-color);
+}
+
+:global(.ant-btn.ant-btn-solid.ant-btn-dangerous:not(:disabled, .ant-btn-disabled)):active svg {
+  color: var(--ant-icon-primary-danger-pressed-color);
+}
+
+:global(.ant-btn.ant-btn-solid.ant-btn-dangerous):disabled,
+:global(.ant-btn.ant-btn-solid.ant-btn-dangerous.ant-btn-disabled) {
+  background: var(--ant-primary-danger-disabled-bg);
+  border-color: var(--ant-primary-danger-disabled-border-color);
+  color: var(--ant-primary-danger-disabled-color);
+}
+
+:global(.ant-btn.ant-btn-solid.ant-btn-dangerous):disabled svg,
+:global(.ant-btn.ant-btn-solid.ant-btn-dangerous.ant-btn-disabled) svg {
+  color: var(--ant-icon-primary-danger-disabled-color);
+}
+
+/* ghost */
+
+:global(.ant-btn.ant-btn-solid.ant-btn-background-ghost) {
+  background: var(--ant-primary-ghost-bg);
+  border-color: var(--ant-primary-ghost-border-color);
+  color: var(--ant-primary-ghost-color);
+}
+
+:global(.ant-btn.ant-btn-solid.ant-btn-background-ghost) svg {
+  color: var(--ant-icon-primary-ghost-color);
+}
+
+:global(.ant-btn.ant-btn-solid.ant-btn-background-ghost:not(:disabled, .ant-btn-disabled)):hover {
+  background: var(--ant-primary-ghost-hover-bg);
+  border-color: var(--ant-primary-ghost-hover-border-color);
+  color: var(--ant-primary-ghost-hover-color);
+}
+
+:global(.ant-btn.ant-btn-solid.ant-btn-background-ghost:not(:disabled, .ant-btn-disabled)):hover svg {
+  color: var(--ant-icon-primary-ghost-hover-color);
+}
+
+:global(.ant-btn.ant-btn-solid.ant-btn-background-ghost:not(:disabled, .ant-btn-disabled)):active {
+  background: var(--ant-primary-ghost-pressed-bg);
+  border-color: var(--ant-primary-ghost-pressed-border-color);
+  color: var(--ant-primary-ghost-pressed-color);
+}
+
+:global(.ant-btn.ant-btn-solid.ant-btn-background-ghost:not(:disabled, .ant-btn-disabled)):active svg {
+  color: var(--ant-icon-primary-ghost-pressed-color);
+}
+
+:global(.ant-btn.ant-btn-solid.ant-btn-background-ghost):disabled,
+:global(.ant-btn.ant-btn-solid.ant-btn-background-ghost.ant-btn-disabled) {
+  background: var(--ant-primary-ghost-disabled-bg);
+  border-color: var(--ant-primary-ghost-disabled-border-color); /* TODO */
+  color: var(--ant-primary-ghost-disabled-color);
+}
+
+:global(.ant-btn.ant-btn-solid.ant-btn-background-ghost):disabled svg,
+:global(.ant-btn.ant-btn-solid.ant-btn-background-ghost.ant-btn-disabled) svg {
+  color: var(--ant-icon-primary-ghost-disabled-color);
+}
+
+/* ghost + dangerous */
+
+:global(.ant-btn.ant-btn-solid.ant-btn-background-ghost.ant-btn-dangerous) {
+  background: var(--ant-primary-ghost-danger-bg);
+  border-color: var(--ant-primary-ghost-danger-border-color);
+  color: var(--ant-primary-ghost-danger-color);
+}
+
+:global(.ant-btn.ant-btn-solid.ant-btn-background-ghost.ant-btn-dangerous) svg {
+  color: var(--ant-icon-primary-ghost-danger-color);
+}
+
+:global(.ant-btn.ant-btn-solid.ant-btn-background-ghost.ant-btn-dangerous:not(:disabled, .ant-btn-disabled)):hover {
+  background: var(--ant-primary-ghost-danger-hover-bg);
+  border-color: var(--ant-primary-ghost-danger-hover-border-color);
+  color: var(--ant-primary-ghost-danger-hover-color);
+}
+
+:global(.ant-btn.ant-btn-solid.ant-btn-background-ghost.ant-btn-dangerous:not(:disabled, .ant-btn-disabled)):hover svg {
+  color: var(--ant-icon-primary-ghost-danger-hover-color);
+}
+
+:global(.ant-btn.ant-btn-solid.ant-btn-background-ghost.ant-btn-dangerous:not(:disabled, .ant-btn-disabled)):active {
+  background: var(--ant-primary-ghost-danger-pressed-bg);
+  border-color: var(--ant-primary-ghost-danger-pressed-border-color);
+  color: var(--ant-primary-ghost-danger-pressed-color);
+}
+
+:global(.ant-btn.ant-btn-solid.ant-btn-background-ghost.ant-btn-dangerous:not(:disabled, .ant-btn-disabled)):active
+  svg {
+  color: var(--ant-icon-primary-ghost-danger-pressed-color);
+}
+
+:global(.ant-btn.ant-btn-solid.ant-btn-background-ghost.ant-btn-dangerous):disabled,
+:global(.ant-btn.ant-btn-solid.ant-btn-background-ghost.ant-btn-dangerous.ant-btn-disabled) {
+  background: var(--ant-primary-ghost-danger-disabled-bg);
+  border-color: var(--ant-primary-ghost-danger-disabled-border-color);
+  color: var(--ant-primary-ghost-danger-disabled-color);
+}
+
+:global(.ant-btn.ant-btn-solid.ant-btn-background-ghost.ant-btn-dangerous):disabled svg,
+:global(.ant-btn.ant-btn-solid.ant-btn-background-ghost.ant-btn-dangerous.ant-btn-disabled) svg {
+  color: var(--ant-icon-primary-ghost-danger-disabled-color);
+}

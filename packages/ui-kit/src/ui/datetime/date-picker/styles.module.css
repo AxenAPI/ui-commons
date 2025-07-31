@@ -1,0 +1,34 @@
+.input-row-one {
+  resize: none;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.date-input-position {
+  position: absolute;
+  z-index: 99;
+}
+
+:global(.ant-picker) {
+  height: var(--ant-control-height);
+}
+
+:global(.ant-picker-small) {
+  height: var(--ant-control-height-sm);
+}
+
+:global(.ant-picker-large) {
+  height: var(--ant-control-height-lg);
+}
+
+.readonly {
+  pointer-events: none;
+
+  &:global(.ant-picker-outlined) {
+    border-color: transparent;
+  }
+
+  &:global(.ant-picker.ant-picker-multiple .ant-picker-selection-overflow .ant-picker-selection-item-remove) {
+    display: none;
+  }
+}

@@ -1,0 +1,19 @@
+:global(.ant-transfer-list-body-customize-wrapper) {
+  height: 100%;
+  position: relative;
+}
+
+.table-no-data td {
+  border: none !important;
+}
+
+.table-empty-data {
+  position: absolute;
+  top: calc(50% - 76px);
+  left: calc(50% - 92px);
+}
+
+.title-button {
+  width: 32px;
+  height: 32px;
+}

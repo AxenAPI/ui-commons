@@ -1,0 +1,17 @@
+.title-modal {
+  display: flex;
+  align-items: start;
+}
+
+.common-modal {
+  :global(.ant-modal-content .ant-modal-close) {
+    width: 22px;
+    height: 22px;
+  }
+}
+
+.modal-body-icon {
+  :global(.ant-modal-body) {
+    margin-left: calc(var(--ant-icon-size) + 8px);
+  }
+}

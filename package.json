@@ -1,0 +1,36 @@
+{
+  "name": "@axenix/ui-commons",
+  "private": true,
+  "scripts": {
+    "build": "lerna run build",
+    "format": "lerna run format --parallel",
+    "lint:fix": "lerna run lint:fix --parallel",
+    "lint": "lerna run lint --parallel",
+    "postinstall": "husky",
+    "publish-packages": "lerna publish --conventional-commits --yes",
+    "qg": "lerna run qg --parallel",
+    "test": "lerna run test --parallel",
+    "test:ui-kit": "lerna run test --scope=@axenix/ui-kit"
+  },
+  "devDependencies": {
+    "@axenix/eslint-plugin": "*",
+    "@axenix/icons": "*",
+    "@axenix/ui-kit": "*",
+    "@commitlint/cli": "^19.4.1",
+    "@commitlint/config-conventional": "^19.4.1",
+    "husky": "^9.0.11",
+    "lerna": "^8.1.6",
+    "lint-staged": "^15.2.5",
+    "npm-run-all2": "^6.2.0"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "packageManager": "yarn@4.9.1",
+  "workspaces": [
+    "packages/*"
+  ],
+  "resolutions": {
+    "rc-resize-observer": "1.4.0"
+  }
+}

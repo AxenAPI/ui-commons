@@ -1,0 +1,16 @@
+.label {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: inline-block;
+  max-width: 100%;
+  vertical-align: bottom;
+}
+
+.label-content {
+  display: inline-flex;
+  align-items: center;
+  max-width: 100%;
+  flex-shrink: 1;
+  min-width: 0;
+}

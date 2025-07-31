@@ -1,0 +1,19 @@
+.image {
+  :global(.ant-image-mask:hover) {
+    cursor: zoom-in;
+  }
+
+  :global(.ant-image-mask:empty) {
+    opacity: 0;
+  }
+}
+
+.mask {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.mask svg {
+  font-size: 24px;
+}

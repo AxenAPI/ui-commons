@@ -1,0 +1,14 @@
+.float-label {
+  position: relative;
+}
+
+.label {
+  position: absolute;
+  pointer-events: none;
+  transition: 0.3s ease all;
+}
+
+.as-label {
+  background: white;
+  padding: 0 4px;
+}

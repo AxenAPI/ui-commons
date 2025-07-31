@@ -1,0 +1,16 @@
+:global(.ant-input-affix-wrapper-readonly) {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+:global(.ant-input-affix-wrapper) {
+  height: var(--ant-control-height);
+}
+
+:global(.ant-input-affix-wrapper-lg) {
+  height: var(--ant-control-height-lg);
+}
+
+:global(.ant-input-affix-wrapper-sm) {
+  height: var(--ant-control-height-sm);
+}

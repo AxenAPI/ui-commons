@@ -1,0 +1,22 @@
+{
+  "Empty": {
+    "description": "Нет данных"
+  },
+  "Icon": {
+    "icon": "иконка"
+  },
+  "Image": {
+    "preview": "Предпросмотр"
+  },
+  "QRCode": {
+    "expired": "QR-код устарел",
+    "refresh": "Обновить",
+    "scanned": "Отсканирован"
+  },
+  "ColorPicker": {
+    "presetEmpty": "Пустой",
+    "transparent": "Прозрачный",
+    "singleColor": "Один цвет",
+    "gradientColor": "Градиент"
+  }
+}

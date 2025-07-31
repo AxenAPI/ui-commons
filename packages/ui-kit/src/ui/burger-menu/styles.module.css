@@ -1,0 +1,64 @@
+.container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.menuItems {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.button {
+  position: relative;
+  height: 2rem;
+  width: 2rem;
+  border: none;
+  background-color: transparent;
+}
+
+.button:focus {
+  outline: none;
+}
+
+.iconContainer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 1.5rem;
+  transform: translate(-50%, -50%);
+}
+
+.line {
+  position: absolute;
+  display: block;
+  height: 0.125rem;
+  width: 1.5rem;
+  border-radius: 9999px;
+  transition: all 0.3s ease;
+}
+
+.lineTopOpen {
+  transform: translateY(0) rotate(45deg);
+}
+
+.lineTopClosed {
+  transform: translateY(-0.5rem);
+}
+
+.lineMiddleOpen {
+  opacity: 0;
+}
+
+.lineMiddleClosed {
+  opacity: 1;
+}
+
+.lineBottomOpen {
+  transform: translateY(0) rotate(-45deg);
+}
+
+.lineBottomClosed {
+  transform: translateY(0.5rem);
+}

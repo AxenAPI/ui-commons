@@ -1,0 +1,17 @@
+.spin {
+  background-color: rgba(255, 255, 255, 0.35);
+  :global(.ant-spin .ant-spin-dot-holder) {
+    color: var(--ant-color-primary);
+  }
+}
+
+.spin-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 999;
+  background-color: rgba(255, 255, 255, 0.35);
+}

@@ -1,0 +1,21 @@
+.icon-wrapper {
+  span {
+    display: block;
+    align-content: center;
+  }
+}
+
+.ant-checkable-tag:hover {
+  color: var(--ant-checkable-hover-text) !important;
+  background-color: var(--ant-checkable-hover-bg) !important;
+
+  .ant-checkable-border-tag {
+    border: 1px solid var(--ant-status-default-border) !important;
+  }
+}
+
+.ant-checkable-checked-tag:hover {
+  color: var(--ant-color-text-light-solid) !important;
+  background-color: var(--ant-color-primary-hover) !important;
+  border: 1px solid transparent !important;
+}

@@ -1,0 +1,22 @@
+import { Canvas, Controls, Markdown, Meta, Source, Story, Title } from '@storybook/blocks';
+
+import { TablesTransfer } from '../TablesTransfer.tsx';
+import * as TablesTransferStories from './TablesTransfer.stories.tsx';
+
+<Meta of={TablesTransferStories} />
+
+<Title />
+
+## Общая структура
+
+TablesTransfer - это компонент, использующийся для создания интерфейса передачи данных между двумя таблицами. В отличии от компонента Transfer позволяет использовать разные потоки данных для таблиц
+
+<Canvas of={TablesTransferStories.Default} />
+
+Компонент принимает следующие параметры (props):
+
+<Controls />
+
+### Детали реализации:
+
+WIP

@@ -1,0 +1,17 @@
+.label {
+  position: absolute;
+  pointer-events: none;
+  transition: 0.3s ease all;
+  z-index: 2;
+}
+
+.as-label {
+  background: white;
+  padding: 0 4px;
+}
+
+.as-placeholder {
+  background: transparent;
+  padding: 0;
+} 
+

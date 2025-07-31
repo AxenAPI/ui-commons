@@ -1,0 +1,35 @@
+.progress-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.progress-count-info {
+  color: #000000e0;
+  display: block;
+  font-family: Helvetica, Arial, Verdana, Tahoma, sans-serif;
+  font-size: 14px;
+}
+
+.progress-success-clickable {
+  & :global(.ant-progress-success-bg:hover) {
+    background-color: #92e767;
+    cursor: pointer;
+  }
+}
+
+.progress-failure-clickable {
+  & :global(.ant-progress-bg-outer:hover) {
+    background-color: #f5a374;
+    cursor: pointer;
+  }
+}
+
+/* специальное описание, чтобы hover-ы children не триггерили hover родительского класса:  */
+.progress-rest-clickable {
+  & :global(.ant-progress-inner:not(:has(.ant-progress-bg-outer:hover), :has(.ant-progress-success-bg:hover)):hover) {
+    background-color: #f9f7f7 !important;
+    cursor: pointer;
+  }
+}

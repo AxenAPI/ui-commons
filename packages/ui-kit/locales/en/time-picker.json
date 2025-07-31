@@ -1,0 +1,7 @@
+{
+  "placeholder": "Select time",
+  "rangePlaceholder": {
+    "start": "Start time",
+    "end": "End time"
+  }
+}

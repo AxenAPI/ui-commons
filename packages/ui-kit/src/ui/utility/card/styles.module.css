@@ -1,0 +1,14 @@
+.innerStyle :global .ant-card-head {
+  height: var(--ant-inner-header-height);
+  font-size: var(--ant-inner-header-font-size);
+  background-color: var(--ant-inner-header-bg);
+  padding: 0 var(--ant-inner-header-padding-horizontal);
+}
+
+.innerStyle :global .ant-card-head-title {
+  line-height: var(--ant-inner-header-line-height);
+}
+
+.innerStyle :global .ant-card-body {
+  padding: var(--ant-inner-content-padding-vertical) var(--ant-inner-content-padding-horizontal);
+}

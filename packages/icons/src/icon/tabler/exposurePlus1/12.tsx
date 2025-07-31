@@ -1,0 +1,9 @@
+const IconExposurePlus1_12 = () => {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="none">
+      <path stroke="#595959" stroke-linecap="round" stroke-linejoin="round" d="M1.5 6h3M3 4.5v3m6 2v-7l-2 2" />
+    </svg>
+  );
+};
+
+export default IconExposurePlus1_12;

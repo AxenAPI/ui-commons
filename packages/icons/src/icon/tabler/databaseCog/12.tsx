@@ -1,0 +1,14 @@
+const IconDatabaseCog12 = () => {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="none">
+      <path
+        stroke="#595959"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        d="M2 3c0 .829 1.791 1.5 4 1.5s4-.671 4-1.5M2 3c0-.828 1.791-1.5 4-1.5s4 .672 4 1.5M2 3v3m8-3v2.75M2 6c0 .829 1.791 1.5 4 1.5q.158 0 .313-.005M2 6v3c0 .829 1.791 1.5 4 1.5m3.5 0a1 1 0 0 1 0-2m0 2a1 1 0 0 0 0-2m0 2v.75m0-2.75v-.75m1.516.875-.65.375m-1.731 1-.65.375m0-1.75.65.375m1.732 1 .65.375"
+      />
+    </svg>
+  );
+};
+
+export default IconDatabaseCog12;

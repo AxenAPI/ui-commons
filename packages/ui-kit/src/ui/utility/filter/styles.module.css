@@ -1,0 +1,23 @@
+.filter-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.filters {
+  margin-right: 4px;
+}
+
+.filter-tooltip {
+  display: flex;
+  flex-direction: column;
+}
+
+.invisible-item {
+  visibility: hidden;
+}
+
+.invisible-items {
+  width: 0;
+  overflow: 'hidden';
+}

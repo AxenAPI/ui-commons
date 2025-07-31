@@ -1,0 +1,13 @@
+.readonly {
+    pointer-events: none;
+
+    :global(.ant-checkbox-inner),
+    :global(.ant-checkbox-checked .ant-checkbox-inner) {
+        background-color: var(--ant-color-bg-container-readonly);
+        border-color: var(--ant-color-border-readonly);
+
+        &::after {
+            border-color: var(--ant-color-readonly);
+        }
+    }
+}

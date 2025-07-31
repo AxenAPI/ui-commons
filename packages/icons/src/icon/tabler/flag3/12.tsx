@@ -1,0 +1,9 @@
+const IconFlag3_12 = () => {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="none">
+      <path stroke="#595959" stroke-linecap="round" stroke-linejoin="round" d="M2.5 7h7L7.25 4.75 9.5 2.5h-7v8" />
+    </svg>
+  );
+};
+
+export default IconFlag3_12;

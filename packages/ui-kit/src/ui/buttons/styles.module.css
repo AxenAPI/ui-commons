@@ -1,0 +1,54 @@
+@import './styles/dashed.module.css';
+@import './styles/default.module.css';
+@import './styles/link.module.css';
+@import './styles/primary.module.css';
+@import './styles/text.module.css';
+
+.buttons-group-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  > button:not(:last-child) {
+    margin-right: var(--ant-margin-xs);
+  }
+}
+
+:global(.ant-btn-icon) {
+  display: inline-flex;
+}
+
+:global(.ant-btn) svg {
+  transition:
+    color var(--ant-motion-duration-mid) var(--ant-motion-ease-in-out),
+    fill var(--ant-motion-duration-mid) var(--ant-motion-ease-in-out);
+}
+
+:global(.ant-btn-default) svg {
+  transition: unset;
+}
+
+:global(.ant-btn.btn-padding-small) {
+  padding-inline: var(--ant-button-padding-inline-sm);
+}
+
+:global(.ant-btn.btn-padding-middle) {
+  padding-inline: var(--ant-button-padding-inline);
+}
+
+:global(.ant-btn.btn-padding-large) {
+  padding-inline: var(--ant-button-padding-inline);
+}
+
+:global(.ant-btn.btn-padding-small-icon) {
+  padding-inline: var(--ant-button-padding-inline-xs);
+}
+
+:global(.ant-btn.btn-padding-middle-icon) {
+  padding-inline: var(--ant-button-padding-inline-sm);
+}
+
+:global(.ant-btn.btn-padding-large-icon) {
+  padding-inline: var(--ant-button-padding-inline-sm);
+}

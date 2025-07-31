@@ -1,0 +1,28 @@
+.outlined-collapse {
+  border-radius: 0;
+  border-top: 1px solid var(--ant-color-border);
+}
+
+.outlined-collapse-panel {
+  border-bottom: 0 !important;
+  background-color: var(--ant-collapse-content-bg);
+
+  .header {
+    background-color: var(--ant-collapse-header-bg);
+    border-bottom: 1px solid var(--ant-color-border);
+  }
+
+  & :global(.ant-collapse-content) {
+    border-bottom: 1px solid var(--ant-color-border) !important;
+  }
+}
+
+.outlined-collapse-panel:last-child {
+  & :global(.ant-collapse-content) {
+    border-bottom: 0 !important;
+  }
+}
+
+:global(.ant-collapse-header) {
+  align-items: center;
+}

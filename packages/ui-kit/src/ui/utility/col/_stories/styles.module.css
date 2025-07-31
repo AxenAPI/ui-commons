@@ -1,0 +1,19 @@
+.rowStyles {
+  text-align: center;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: orangered;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.colStyles {
+  padding: 0 5em;
+}
+
+.colOffset {
+  background-color: orange;
+  padding: 0 5em;
+}

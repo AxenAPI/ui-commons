@@ -1,0 +1,13 @@
+.readonly {
+    pointer-events: none;
+
+    :global(.ant-radio-inner),
+    :global(.ant-radio-checked .ant-radio-inner) {
+        background-color: var(--ant-color-bg-container-readonly);
+        border-color: var(--ant-color-border-readonly);
+
+        &::after {
+            background-color: var(--ant-color-readonly);
+        }
+    }
+}

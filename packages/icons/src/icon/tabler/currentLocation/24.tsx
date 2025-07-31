@@ -1,0 +1,15 @@
+const IconCurrentLocation24 = () => {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none">
+      <path
+        stroke="#595959"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="1.5"
+        d="M4 12a8 8 0 0 0 8 8m-8-8a8 8 0 0 1 8-8m-8 8H2m10 8a8 8 0 0 0 8-8m-8 8v2m8-10a8 8 0 0 0-8-8m8 8h2M12 4V2M9 12a3 3 0 1 0 6 0 3 3 0 0 0-6 0"
+      />
+    </svg>
+  );
+};
+
+export default IconCurrentLocation24;

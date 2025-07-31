@@ -1,0 +1,21 @@
+const IconCoinOff12 = () => {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="none">
+      <g clip-path="url(#a)">
+        <path
+          stroke="#595959"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M7.4 4.5a1 1 0 0 0-.9-.5H6V3M4.59 4.585A1 1 0 0 0 5.5 6H6m1.412 1.41A1 1 0 0 1 6.5 8h-1a1 1 0 0 1-.9-.5m5.421.522A4.5 4.5 0 0 0 3.978 1.98m-1.16.838a4.5 4.5 0 1 0 6.363 6.365M6 8v1M1.5 1.5l9 9"
+        />
+      </g>
+      <defs>
+        <clipPath id="a">
+          <path fill="#fff" d="M0 0h12v12H0z" />
+        </clipPath>
+      </defs>
+    </svg>
+  );
+};
+
+export default IconCoinOff12;

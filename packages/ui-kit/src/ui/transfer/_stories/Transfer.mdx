@@ -1,0 +1,159 @@
+import { Canvas, Controls, Markdown, Meta, Source, Story, Title } from '@storybook/blocks';
+
+import { Transfer } from '../Transfer.tsx';
+import { ARG_TYPES } from './consts.ts';
+import * as TransferStories from './Transfer.stories.tsx';
+
+<Meta of={TransferStories} />
+
+<Title />
+
+## Общая структура
+
+Transfer - это компонент, использующийся для создания интерфейса передачи данных между двумя списками. Он позволяет пользователю перетаскивать или перемещать элементы из одного списка в другой
+
+<Canvas layout="padded" of={TransferStories.Default} />
+
+Компонент принимает следующие параметры (props):
+
+<Controls />
+
+## Вариант с таблицами
+
+<Canvas layout="padded" of={TransferStories.WithTables} />
+
+### Детали реализации:
+
+1. Подготовьте описание таблицы: тип данных и вид колонок.
+
+   key - обязательное поле для transfer,
+   остальные поля соответствуют данным вашей таблицы
+
+{' '}
+
+{' '}
+
+{' '}
+
+<Source
+  code={`export interface DataType {
+      key: string;
+      name: string;
+      code: string;
+      type: string;
+}`}
+/>
+<Source
+  code={`const leftColumns: ColumnsType<DataType> = [
+  {
+    dataIndex: 'name',
+    title: 'Наименование',
+  },
+  {
+    dataIndex: 'code',
+    title: 'Код',
+  },
+  {
+    dataIndex: 'type',
+    title: 'Тип',
+  },
+];`}
+/>
+
+2. Компоненту Transfer нужно будет указать тип данных таблицы и передать сами данные в dataSource.
+   Компонент произведет обработку и их можно будет получить в children-функции:
+
+<Source
+  code={` <Transfer<DataType>
+      {...argTypes}
+      className={styles.transferWithTables}
+      dataSource={mockData}
+      ....
+      >{({ direction, filteredItems, onItemSelect, onItemSelectAll, selectedKeys }) => {...}</Transfer>`}
+/>
+
+<Markdown>
+  {`
+| **prop** | **Описание** |
+| --------------- | ----------------------------------------------------------------------------------------------------- |
+| direction | может принимать значения 'left', 'right'. Помогает разделить рендеры левого и правого блоков Transfer |
+| filteredItems | значения, которые будет возвращать Transfer. Для каждого значения direction они будут свои |
+| onItemSelect | callback для выделения конкретной записи |
+| onItemSelectAll | callback для выделения нескольких записей |
+| selectedKeys | выбранные значения для текущего direction |
+`}
+</Markdown>
+
+3. Далее уже добавлеяем реализацию вида таблиц внутри children функции. Вариант из примера:
+
+<Source
+  code={`{({ direction, filteredItems, onItemSelect, onItemSelectAll, selectedKeys: listSelectedKeys }) => {
+        const rowSelection: TableRowSelection<TransferItem> = {
+          getCheckboxProps: () => ({}),
+          onChange(selectedRowKeys) {
+            onItemSelectAll(selectedRowKeys, 'replace');
+          },
+          selectedRowKeys: listSelectedKeys,
+        };
+        const isDataEmpty = filteredItems.length === 0;
+
+        if (direction === 'left') {
+          return (
+            <>
+              <Table
+                className={cn(styles.table, { [styles.tableNoData]: isDataEmpty })}
+                rowSelection={rowSelection}
+                columns={leftColumns}
+                data={filteredItems}
+                size="small"
+                onRow={({ key }) => ({
+                  onClick: () => {
+                    onItemSelect(key, !listSelectedKeys.includes(key));
+                  },
+                })}
+                locale={{ emptyText: '' }}
+              />
+              {isDataEmpty && <Empty className={styles.tableEmptyData} description="Данные отсутствуют" />}
+            </>
+          );
+        }
+        return (
+          <>
+            <DragNDropTable
+              className={cn(styles.table, { [styles.tableNoData]: isDataEmpty })}
+              rowSelection={rowSelection}
+              data={filteredItems as unknown as DataType[]}
+              size="small"
+              onRow={({ key }) => ({
+                onClick: () => {
+                  onItemSelect(key, !listSelectedKeys.includes(key));
+                },
+              })}
+              locale={{ emptyText: '' }}
+            />
+            {isDataEmpty && <Empty className={styles.tableEmptyData} description="Данные отсутствуют" />}
+          </>
+        );
+      }}`}
+
+/>
+
+4. Для такого же отображения пустых данных таблицы (по центру на весь блок Transfer), нужно применить следующие стили:
+
+<Source code={`:global(.ant-transfer-list-body-customize-wrapper) {
+  height: 100%;
+  position: relative;
+}
+
+.table-no-data td {
+border: none !important;
+}
+
+.table-empty-data {
+position: absolute;
+top: calc(50% - 76px);
+left: calc(50% - 92px);
+}
+`} />
+
+5. Варианты работы с таблицей можно посмотреть в сторе Tables.

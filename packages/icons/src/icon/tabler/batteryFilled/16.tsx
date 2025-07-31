@@ -1,0 +1,12 @@
+const IconBatteryFilled16 = () => {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none">
+      <path
+        fill="#595959"
+        d="M11.333 4a2 2 0 0 1 1.997 1.883l.003.117v.057l.035.013a1 1 0 0 1 .627.833L14 7v2a1 1 0 0 1-.632.93l-.035.012V10a2 2 0 0 1-1.882 1.997l-.118.003H4a2 2 0 0 1-1.997-1.883L2 10V6a2 2 0 0 1 1.883-1.997L4 4z"
+      />
+    </svg>
+  );
+};
+
+export default IconBatteryFilled16;

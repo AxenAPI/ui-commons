@@ -1,0 +1,9 @@
+.chevron {
+  transition: transform 0.3s;
+  display: flex;
+  width: 24px;
+  height: 24px;
+  align-items: center;
+  justify-content: center;
+  vertical-align: baseline;
+}

@@ -1,0 +1,29 @@
+import { CSSProperties, ReactNode } from 'react';
+
+import { Row as AntdRow, RowProps } from 'antd';
+
+/**
+ * @property {ReactNode} children - Колонки
+ * @property {boolean} [wrap] - Включение переносов
+ * @property {RowProps['gutter']} [gutter] - Расстояние между сетками
+ * @property {string} [className] - Классы стилей
+ * @property {CSSProperties} [style] - Css стили
+ * @property {RowProps['justify']} [justify] - Выравнивание внутренних блоков по горизонтали
+ * @property {RowProps['align']} [align] - Выравнивание внутренних блоков по вертикали
+ * */
+export type TRowProps = {
+  children: ReactNode;
+  wrap?: boolean;
+  gutter?: RowProps['gutter'];
+  className?: string;
+  style?: CSSProperties;
+  justify?: RowProps['justify'];
+  align?: RowProps['align'];
+};
+
+/**
+ * Контейнер для колонок
+ * */
+export function Row(props: TRowProps) {
+  return <AntdRow {...props} />;
+}

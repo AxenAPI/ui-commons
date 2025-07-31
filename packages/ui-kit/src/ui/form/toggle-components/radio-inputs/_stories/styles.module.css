@@ -1,0 +1,7 @@
+:global(.ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled)::before) {
+  background-color: red !important;
+}
+
+:global(.ant-radio-button-wrapper:hover) {
+  color: black;
+}

@@ -1,0 +1,79 @@
+.row-table {
+  .action-btn {
+    position: absolute;
+    gap: 4px;
+    right: 0;
+    transform: translateY(-50%);
+    background: inherit;
+    padding: 0 8px;
+    display: flex;
+  }
+
+  :global(.ant-table-row-expand-icon:hover) {
+    color: var(--ant-color-link-hover) !important;
+    border-color: currentColor !important;
+  }
+
+  :global(.ant-table-row-expand-icon:focus) {
+    color: inherit;
+    border: var(--ant-line-width) var(--ant-line-type) var(--ant-table-border-color);
+  }
+
+  .children {
+    display: none;
+  }
+}
+
+.row-table:hover {
+  .action-btn {
+    .children {
+      display: flex;
+    }
+  }
+}
+
+.row-table .action-btn .active {
+  display: flex !important;
+}
+
+:global(.ant-table-wrapper) :global(.ant-table-thead) > tr > th.column-settings-cell,
+:global(.ant-table-wrapper)
+  :global(.ant-table.ant-table-small)
+  :global(.ant-table-thead)
+  > tr
+  > th.column-settings-cell {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+:global(
+  :where(.css-dev-only-do-not-override-bt8im6).ant-table-wrapper
+    .ant-table.ant-table
+    .ant-table-tbody
+    .ant-table-wrapper:only-child
+    .ant-table
+) {
+  margin-block: calc(var(--ant-table-cell-padding-block) * -1);
+  margin-inline: calc(
+      calc(var(--ant-control-interactive-size) + var(--ant-padding) * 2) - var(--ant-table-cell-padding-inline)
+    )
+    calc(var(--ant-table-cell-padding-inline) * -1);
+}
+
+.table-header-transparent {
+  & :global(.ant-table-thead) > tr > th {
+    background-color: transparent !important;
+  }
+}
+
+.hide-scroll {
+  :global(.ant-table-content) {
+    overflow: hidden !important;
+  }
+  :global(.ant-table-tbody .ant-table-cell) {
+    border: none;
+  }
+  :global(.ant-table-container)::after {
+    display: none;
+  }
+}

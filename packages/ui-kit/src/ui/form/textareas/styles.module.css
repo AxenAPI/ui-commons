@@ -1,0 +1,48 @@
+.input-position {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+
+.input-resize {
+  resize: vertical !important;
+}
+
+.text-area-content {
+  position: relative;
+}
+
+.input-row-one {
+  resize: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.overlay {
+  position: absolute;
+  top: 0.5px;
+  left: 0;
+  right: 0;
+  pointer-events: none;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  opacity: 1;
+  z-index: 2;
+  border-radius: var(--ant-border-radius);
+  background: var(--ant-color-bg-container);
+  margin: 0 2px;
+}
+
+.overlay-none {
+  display: none;
+}
+
+.readonly {
+  pointer-events: none;
+
+  &:global(.ant-input) {
+    border-color: transparent;
+    resize: none;
+  }
+}

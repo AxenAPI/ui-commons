@@ -1,0 +1,7 @@
+/**
+ * Fixes too bold font in Safari
+ * @see https://stackoverflow.com/questions/9450706/safari-font-weight-issue-text-too-bold
+ */
+* {
+  font-synthesis: none;
+}

@@ -1,0 +1,12 @@
+.breadcrumbs {
+  :global(.ant-breadcrumb-link),
+  :global(.ant-dropdown-trigger) {
+    display: flex !important;
+    align-items: center;
+    gap: 4px;
+  }
+
+  :global(ol > *) {
+    align-content: center;
+  }
+}

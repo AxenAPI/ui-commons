@@ -1,0 +1,17 @@
+.custom-tabs {
+  :global(.ant-tabs-tab-btn) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+
+    /** Временное решение. Пробелма в antd со стилем ant-tabs-tab-focus. Возможно поправят в следующий версиях */
+    outline: none !important;
+  }
+
+  :global(.ant-tabs-tab-icon) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

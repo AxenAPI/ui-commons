@@ -1,0 +1,19 @@
+.tooltipCombinedTitle {
+  display: grid;
+  gap: 8px;
+}
+
+.singleRow {
+  grid-template-rows: min-content min-content;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+.tooltipLabel,
+.tooltipValue {
+  font-weight: var(--ant-font-weight);
+}
+
+.tooltipLabel {
+  opacity: 0.65;
+}

@@ -1,0 +1,14 @@
+const IconDeviceWatchShare12 = () => {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="none">
+      <path
+        stroke="#595959"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        d="M6.25 9H4.5m0 0A1.5 1.5 0 0 1 3 7.5v-3A1.5 1.5 0 0 1 4.5 3m0 6v1.5H6M4.5 3h3m-3 0V1.5h3V3m0 0A1.5 1.5 0 0 1 9 4.5v2M8 11l2.5-2.5m0 0v2.25m0-2.25H8.25"
+      />
+    </svg>
+  );
+};
+
+export default IconDeviceWatchShare12;

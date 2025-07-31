@@ -1,0 +1,15 @@
+const IconDeviceImacCode16 = () => {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none">
+      <path
+        stroke="#595959"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="1.2"
+        d="M7.667 11.333h-5A.667.667 0 0 1 2 10.667v-8A.667.667 0 0 1 2.667 2h10.666a.667.667 0 0 1 .667.667v6H2M5.333 14h2.334m-1-2.667L6.333 14m7 0 1.334-1.333-1.334-1.334m-2 0L10 12.667 11.333 14"
+      />
+    </svg>
+  );
+};
+
+export default IconDeviceImacCode16;

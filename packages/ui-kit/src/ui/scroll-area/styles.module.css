@@ -1,0 +1,9 @@
+.custom {
+  --os-handle-bg: var(--scroll-handle-bg);
+  --os-handle-bg-hover: var(--scroll-handle-bg-hover);
+  --os-handle-bg-active: var(--scroll-handle-bg-active);
+  --os-padding-axis: var(--scroll-padding-axis);
+  --os-padding-perpendicular: var(--scroll-padding-perpendicular);
+  --os-size: var(--scroll-width, 6px);
+  --os-handle-size: var(--scroll-width, 6px);
+}
